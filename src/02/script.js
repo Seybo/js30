@@ -1,3 +1,5 @@
+const css = require('./style.scss');
+
 document.addEventListener("DOMContentLoaded", function(event) { 
   const secondHand = document.querySelector('.second-hand');
   const minHand = document.querySelector('.min-hand');

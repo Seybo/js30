@@ -1,3 +1,5 @@
+const css = require('./style.scss');
+
 document.onreadystatechange = function () {
   const keys = document.querySelectorAll('.key');
   keys.forEach(key => key.addEventListener('transitionend', removeTransion));
