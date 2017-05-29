@@ -1,8 +1,9 @@
+require("expose-loader?myLib!./script.js");
 const css = require('./style.scss');
 
-const hero = document.querySelector('.hero');
-const text = hero.querySelector('h1');
-const walk = 100; // 100px
+export const hero = document.querySelector('.hero');
+export const text = hero.querySelector('h1');
+export const walk = 100; // 100px
 
 function shadow(e) {
   const width = hero.offsetWidth;
