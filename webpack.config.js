@@ -28,7 +28,8 @@ module.exports = {
     lesson22: './src/22/script.js',
     lesson24: './src/24/script.js',
     lesson25: './src/25/script.js',
-    lesson26: './src/26/script.js'
+    lesson26: './src/26/script.js',
+    lesson27: './src/27/script.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -222,6 +223,13 @@ module.exports = {
       chunks: ['lesson26'],
       filename: 'lesson26.html',
       template: './src/26/index.html'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Lesson 27',
+      hash: true,
+      chunks: ['lesson27'],
+      filename: 'lesson27.html',
+      template: './src/27/index.html'
     }),
     styleScss
   ]
